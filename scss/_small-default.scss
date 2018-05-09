@@ -10,6 +10,7 @@ sizing: border-box}
 body{
     // font-family: $defaultFont;
     font-weight: $normalWeight;
+    font-size: 16px;
 }
 
 /*  ----------------------- HEADER    ------------------------  */
@@ -20,7 +21,7 @@ header {
 
     h1 {
         font-size: 2rem;
-        font-weight: $normalWeight
+        font-weight: $normalWeight;      
     }
 
     h2 {
@@ -28,3 +29,58 @@ header {
         font-weight: $normalWeight
     }
 }  // end of header
+
+/*  --------------------- NAVIGATION   ------------------------  */
+nav {
+    background-color: $secondaryColor;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+
+    ul li {
+        float: left;
+        width: 25%;
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+    } //  end  of li
+
+    ul li:last-child { border-right: none}
+
+    ul li a {
+        display: block;
+        text-align: center;
+        font-weight: $boldWeight;
+        padding: .5rem 0;
+        color: $primaryColor;
+        text-decoration: none;
+       transition: background 0.75s ease, color 0.75s ease;
+    }   // end of anchors
+
+    ul li.active a {
+         background-color: darken($secondaryColor, 15%)
+    } // end of active
+
+        ul li a:hover {
+            color: $secondaryColor;
+            background-color: $primaryColor;
+        }  // end hover
+}   // end nav
+
+/*  ----------------------- FOOTER   --------------------------  */
+footer {
+    width: 100%;
+    background-color: $primaryColor;
+
+    p {
+        text-align: center;
+        color: $secondaryColor;
+        padding: .75rem 0;
+        font-size: .9rem;
+    } // end p
+
+    p a { color: $secondaryColor;}
+} // end footer
+
+/*  ----Clearfix: Force an element not to collapse   ----------  */
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
