@@ -5,3 +5,7 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /* apply a natural box layout model to all elementsn */
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
 sizing: border-box}
+
+h1{ color: red; }
+
+p{color: aqua;}
