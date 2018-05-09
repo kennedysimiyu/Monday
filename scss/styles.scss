@@ -1,0 +1,16 @@
+@import "reset";
+
+@import "small-default";
+
+/* media qury start point */
+@media only screen and (min-width: 560px){
+
+    @import "medium";
+}
+
+/* media qury start point */
+@media only screen and (min-width: 1140px){
+
+    @import "large";
+
+}
