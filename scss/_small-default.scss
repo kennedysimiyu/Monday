@@ -6,4 +6,16 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
 sizing: border-box}
 
+// Overall styling for the body of the document.
 body{ background-color: orange; }
+
+
+// Overall styling for the MAIN of the document.
+
+
+// Overall styling for the Navigation of the document.
+h1 { color: $primaryColor;}
+
+
+// Overall styling for the FOOTER of the document.
+footer{ color: $primaryColor;}
